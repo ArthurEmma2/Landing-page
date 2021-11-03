@@ -1,0 +1,529 @@
+:root {
+    --primary--color: #333;
+    --secondary--colour:#444;
+     --overaly--color: rgba(0, 0, 0, 0.6); 
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    height: 100vh;
+}
+
+
+h1,h2,h3,h4{
+    line-height: 1.5rem;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--secondary--colour);
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+
+
+.navbar{
+    font-size: 1.0rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: black;
+  
+   
+}
+
+.navbar .container{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    flex:  2;
+    
+}
+
+
+nav{
+   background-position: fixed;
+}
+
+
+
+.navbar .nav{
+    justify-self: flex-end;
+    display: flex;
+    flex: 1 1 1 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+.navbar a{
+    color: white;
+    padding: 0 30px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+   
+}
+
+.navbar .nav a:hover{
+    text-decoration-color:white;
+    text-decoration: underline;
+   text-underline-offset: 22.4px;
+    
+}
+
+
+
+
+
+
+ .logo{
+    width: 100px;
+
+}
+
+
+
+
+
+.section-a {
+    
+    background: url('../img/background/pg\ -\ 6.jpg'); 
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position:  center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex flex-start;
+    padding-bottom: 20px;
+   
+
+    
+}
+
+
+
+
+
+.section-a h1{
+    font-size: 2rem;
+    color: black;
+    margin: 20px 0;
+    line-height: -60px;
+    font-weight: 700;
+    font-family: 'raleway';
+}
+
+.section-a p{
+    margin: 1rem 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 39px;
+    font-family: 'raleway';
+ 
+
+}
+
+
+
+.btn{
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 5px 35px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    border: 1px solid white;
+    text-transform: uppercase; 
+
+   
+}
+
+
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+
+.section-b{
+    position: relative;
+    background: url('../img/background/pg-12.jpg') no-repeat bottom center/cover;
+    height: 600px;
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+
+
+.section-b-inner{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 5rem 0;
+    font-family: 'raleway';
+}
+
+.section-b-inner h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.section-b-inner h2{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.section-b-inner p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 32px;
+}
+.section-b-inner .btn-2{
+    padding: 9px;
+    display: inline-block;
+    color: white;
+    background: blueviolet;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+
+.section-b-inner .btn-2:hover{
+    opacity: 0.3;
+}
+
+
+.section-c .gallery{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overaly--color);
+}
+
+
+ img{
+    width: 100%;
+}
+
+
+
+.section-c .gallery a:first-child{
+  
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.section-c .gallery a:nth-child(2){
+    grid-column: 3/5;
+}
+.section-c .gallery a:nth-child(5){
+    grid-column: 3/10;
+}
+
+
+.section-c .gallery img, .section-c .gallery a{
+    width: 100%;
+    height: 100%;
+} 
+
+
+
+.section-d{
+    background:black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.section-d h2{
+    font-family: 'raleway';
+}
+
+
+.info{
+    color: white;
+    line-height: 35px;
+    margin: 20px;
+
+}
+
+.info hr{
+    margin: auto;
+    width: 120px;
+    height: 3px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-color:  blueviolet;
+    
+}
+
+
+.info h2{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 10px
+   
+}
+
+
+.info .btn-2{
+    padding: 9px;
+    display: inline-block;
+    color: white;
+    background: blueviolet;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+   
+}  
+
+
+.info .btn-2:hover{
+    opacity: 0.3;
+}
+
+
+
+.section-e{
+    position: relative;
+    background: url('../img/background/bg-3.jpg') no-repeat bottom center/cover;
+    height: 600px;
+    /* background-attachment: initial; */
+    padding-top: 50px;
+   
+}
+
+
+.section-e-inner{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 5rem 0;
+    line-height: 35px;
+    font-family: 'raleway';
+}
+
+
+footer{
+    background: #1b1b1a;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    padding: 4rem 0;
+}
+
+
+
+.section-f .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.section-f h2{
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+
+.section-f h3{
+    font-size: 1rem;
+    margin-bottom: 16px
+
+}
+
+.section-f a{
+    color: #ccc;
+    line-height: 1.9;
+
+}
+
+.email-form{
+    width: 100%;
+    display: inline-block;
+    background-color: #555;
+    position: relative;
+    border-radius: 20px;
+    line-height: 0;
+    margin-top: 1rem;
+}
+.email-form .form-control{
+    display: inline-block;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    color: #ddd;
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3rem 0 1.5rem;
+    width: 100%;
+    border-radius: 20px;
+    height: 45px;
+}
+
+
+.email-form .submit{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #eee;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+
+}
+
+
+.footer-info{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.footer-info p{
+    margin: 20px;
+
+}
+
+
+.section-f i{
+    font-size: 25px;
+    margin: 0 19px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.section-f i:hover{
+    background-color: slateblue;
+} 
+
+
+.section-f a:hover{
+    text-decoration: underline;
+
+}
+
+
+
+
+
+@media(max-width: 991px){
+
+    .section-b-inner p{
+        margin-bottom: 20px;
+    }
+
+    .section-f{
+        padding: 2rem 0;
+
+    }
+    
+    .section-f .container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+    }
+    
+
+    .section-f div:nth-child(2),
+    .section-f div:nth-child(3){
+        display: none;
+    }
+    .section-e p{
+        font-size: 1.5rem;
+    }
+
+
+    html, p{
+        font-size: 17px;
+    }
+
+
+
+
+    section-f i{
+        font-size: 25px;
+        margin: 10px 5px;
+        font-weight: 500;
+        transition: 0.3s ease;
+    }
+    
+    .section-f i:hover{
+        background-color: slateblue;
+    } 
+    
+
+}
